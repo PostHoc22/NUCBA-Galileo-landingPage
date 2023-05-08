@@ -14,21 +14,40 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 font-family: 'Roboto Slab', serif;
 font-family: 'Rubik', sans-serif; */
-
 /* TODO font - final */
 
 :root {
   /* bg color */
-  --background-nav: #000000;
-  --background-2: #272727;
-  --background-prueba-logo: aqua;
+  --background-nav: #380f20;
+
+  /* bg-iamge */
+  --background-img-main: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #da6193,
+    #e0597e,
+    #e25368,
+    #e05150,
+    #d74b48,
+    #ce453f,
+    #c53f37,
+    #b5313b,
+    #a4253e,
+    #921b3f,
+    #7f133e
+  );
 
   /* text colors */
   --text-white: #f3f4f6;
-  --text-hover: #e2c05a;
+  --text-nav-hover: #e2c05a;
+  --text-grey: #272727;
   /* decoration */
   --cart-icon: #f3f4f6;
   --cart-icon-hover: #fd94c4;
+  --text-decoration-h2: #2d420c;
+  --text-decoration-p: #209cd8;
+  --btn-call: #002223;
+  --btn-learn: #f3f4f6;
 }
 
 /* selector universal */
@@ -39,17 +58,25 @@ font-family: 'Rubik', sans-serif; */
   list-style-type: none;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  min-width: min-content;
 }
 
 /* header inicio */
 header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: var(--background-nav);
-  position: fixed;
+  position: sticky;
   top: 0;
+  transition: all 0.8s ease-out;
+  padding-bottom: 2px;
+  z-index: 1;
+}
+header:hover {
+  background-color: black;
+  /* padding: 10px 0px; */
 }
 
 .logo {
@@ -60,7 +87,6 @@ header {
 .navbar {
   width: 70%;
 }
-
 .navbar-list {
   display: flex;
   align-items: center;
@@ -68,17 +94,14 @@ header {
   flex-wrap: wrap;
   min-width: min-content;
 }
-
 .navbar-list li a {
   color: var(--text-white);
   font-size: 1.1em;
 }
-
 .navbar-list li a:hover {
-  color: var(--text-hover);
+  color: var(--text-nav-hover);
   transition: 0.2s;
 }
-
 .navbar-list li:nth-child(1) {
   font-weight: 900;
 }
@@ -92,10 +115,138 @@ header {
   margin-right: 10px;
   cursor: pointer;
 }
-
 .cart-icon:hover {
   color: var(--cart-icon-hover);
   transform: rotateY(360deg);
   transition: 1s;
 }
 /* header final */
+
+/* ! MAIN INICIO */
+main {
+  background-image: var(--background-img-main);
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+/** main - seccion hero - */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 150px 25px 265px 50px;
+}
+.hero-info {
+  width: 50%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 40px;
+}
+.hero-info h2 {
+  font-size: 3em;
+  color: var(--text-white);
+  text-shadow: 10px 5px 10px var(--text-decoration-h2);
+  font-style: italic;
+}
+.hero-info p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--text-white);
+  text-shadow: 1px 5px 10px var(--text-decoration-p);
+}
+.hero-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 40px;
+}
+.hero-btn {
+  font-size: 14px;
+  font-weight: 600;
+  width: max-content;
+  height: max-content;
+  padding: 14px;
+  border-radius: 50px;
+  transition: all 0.5s ease-out;
+  font-family: "Helvetica", sans-serif;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  padding: 16px;
+}
+.call {
+  background-color: var(--btn-call);
+  color: var(--text-white);
+}
+.call:hover {
+  background-color: var(--btn-learn);
+  color: var(--text-grey);
+}
+.learn:hover {
+  background-color: var(--btn-call);
+  color: var(--text-white);
+}
+.hero-img {
+  background-image: url(../img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 12px 10px;
+  height: 400px;
+  width: 500px;
+  border: solid 4px;
+  padding: 20px;
+  border-radius: 30px;
+}
+/** main - seccion hero - final */
+
+/** main - seccion about - inicio */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background-image: url(../img/about-image04.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 20px;
+  z-index: 2;
+  opacity: 0.8;
+  width: 70%;
+  height: 550px;
+  box-shadow: 5px 5px 12px 10px;
+  border: solid 4px;
+  margin: 0 auto;
+  transition: all 0.5s ease-in;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--text-white);
+  text-align: center;
+  width: 80%;
+  height: 200px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 5px 1px 10px var(--text-grey);
+  padding-top: 100px;
+}
+
+/* *PARA CARD "clase de card":hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+  transition: all 2s ease-in;
+} */
