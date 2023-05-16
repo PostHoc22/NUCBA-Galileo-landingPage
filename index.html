@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste Masajes&Spa</title>
     <!-- icono pestaña -->
-    <link rel="icon" href="./assets/img/favicon.svg">
+    <link rel="icon" href="/assets/favicon/favicon.svg">
     <!-- link de estilos -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- link carrito -->
@@ -17,15 +17,15 @@
 <body>
     <header>
         <!-- imagen logo -->
-        <img src="./assets/img/Logo.png" alt="Logo de la Empresa" class="logo" />
+        <img src="./assets/img/logo/Logo.png" alt="Logo de la Empresa" class="logo" />
         <!-- navbar -->
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#ini">Inicio</a></li>
+                <li><a href="#nos">Nosotros</a></li>
+                <li><a href="#serv">Servicios</a></li>
+                <li><a href="#pro">Productos</a></li>
+                <li><a href="#con">Contacto</a></li>
             </ul>
         </nav>
         <!-- carrito de compras -->
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="ini">
         <section class="hero">
             <div class="hero-info">
                 <h2>El Arte de Relajar</h2>
@@ -44,24 +44,104 @@
                     cremas de masaje, ambiente aromatizado con aceites esenciales, tenue luz con velas aromáticas....
                 </P>
                 <div class="hero-button">
-                    <button class="hero-btn call">CALL TO ACTION</button>
-                    <button class="hero-btn learn">LEARN MORE</button>
+                    <button class="hero-btn account">Crear Cuenta</button>
+                    <button class="hero-btn login">Iniciar Sesion</button>
                 </div>
             </div>
             <div class="hero-img">
                 <!-- ! IMAGEN INSERTADA COMO BACKGROUND-IMAGE EN CSS -->
             </div>
         </section>
-
-        <section class="about">
-            <p class="about-info">Somos un centro especializado en restablecer la salud física y psíquica de nuestros
+        <br id="nos">
+        <section class="about" id="nos">
+            <p class="about-info">Somos un centro especializado en restablecer la salud física y psíquica de
+                nuestros
                 pacientes a través de terapias que actúan a nivel muscular y del sistema nervioso.</p>
 
             <p class="about-info">El masaje es un método de valoración y tratamiento manual de aquellas partes del
-                cuerpo humano que presentan alguna dolencia, o susceptibles de presentarla, con el objetivo de mejorar
+                cuerpo humano que presentan alguna dolencia, o susceptibles de presentarla, con el objetivo de
+                mejorar
                 el dolor, reducir o eliminar tensiones musculares, mejorar la circulación sanguínea y linfática y
                 conseguir un alivio del estrés, la ansiedad y las tensiones del día a día.</p>
         </section>
+
+        <section class="services" id="serv">
+            <h2>Tratamientos Corporales</h2>
+            <div class="cards-container">
+                <figure class="cards">
+                    <img src="./assets/img/services-cards/descontracturantes.jpg" alt="masajes descontracturantes">
+                    <figcaption class="card-info">
+                        <h3>Masajes Descontracturantes</h3>
+                        <span>Duracion: 1 hora y 30 minutos</span>
+                        <p>Tratando la capa profunda de los músculos, este masaje energiza, estimula y ayuda a
+                            incrementar
+                            el flujo de oxígeno. Varios niveles de presión de masaje liberarán y disolverán la
+                            tensión,
+                            aliviarán el dolor crónico y provocarán un bienestar general en todo el cuerpo.</p>
+                        <div class="card-price">
+                            <button>Comprar</button>
+                            <span>$ 3.000</span>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="cards">
+                    <img src="./assets/img/services-cards/descontracturantes.jpg" alt="masajes descontracturantes">
+                    <figcaption class="card-info">
+                        <h3>Masajes Descontracturantes</h3>
+                        <span>Duracion: 1 hora y 30 minutos</span>
+                        <p>Tratando la capa profunda de los músculos, este masaje energiza, estimula y ayuda a
+                            incrementar
+                            el flujo de oxígeno. Varios niveles de presión de masaje liberarán y disolverán la
+                            tensión,
+                            aliviarán el dolor crónico y provocarán un bienestar general en todo el cuerpo.</p>
+                        <div class="card-price">
+                            <button>Comprar</button>
+                            <span>$ 3.000</span>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="cards">
+                    <img src="./assets/img/services-cards/descontracturantes.jpg" alt="masajes descontracturantes">
+                    <figcaption class="card-info">
+                        <h3>Masajes Descontracturantes</h3>
+                        <span>Duracion: 1 hora y 30 minutos</span>
+                        <p>Tratando la capa profunda de los músculos, este masaje energiza, estimula y ayuda a
+                            incrementar
+                            el flujo de oxígeno. Varios niveles de presión de masaje liberarán y disolverán la
+                            tensión,
+                            aliviarán el dolor crónico y provocarán un bienestar general en todo el cuerpo.</p>
+                        <div class="card-price">
+                            <button>Comprar</button>
+                            <span>$ 3.000</span>
+                        </div>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="moreInfo">
+            <div class="moreInfo-img">
+                <!-- ! IMAGEN INSERTADA COMO BACKGROUND-IMAGE EN CSS -->
+            </div>
+            <div class="moreInfo-data">
+                <span>En nuestro centro encontrará un ambiente ideal.</span>
+                <h2>Tranquilidad y relajación diseñada especialmente para Ud.</h2>
+                <p>Nuestras terapias son personalizadas y efectivas que buscan la satisfacción de
+                    cada paciente. Tenemos diversas terapias que le ayudará a lidiar con el stress, falta de sueño,
+                    cansancio, dolores musculares, dolor de cabeza, etc. Mejorando así sus actividades de la vida
+                    diaria, y con ello llevar un ritmo de vida en equilibrio y armonía.</p>
+                <button class="account hero-btn">Servicios</button>
+                <button class="account hero-btn">Productos</button>
+            </div>
+        </section>
+
+
 
     </main>
 </body>
