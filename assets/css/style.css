@@ -18,10 +18,12 @@ font-family: 'Rubik', sans-serif; */
 
 :root {
   /* font-size */
-  --font-size-h2: 2.5rem;
-  --font-size-h3-card: 1.2rem;
   --font-size-navbar: 1.1rem;
   --font-size-p-section: 1rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3-card: 1.2rem;
+  --font-size-span-card: 1rem;
+  --font-size-p-card: 0.9rem;
   --font-size-btn: 1rem;
   /* bg color */
   --background-nav: #4e132c;
@@ -46,10 +48,10 @@ font-family: 'Rubik', sans-serif; */
   --background-img-card: linear-gradient(360deg, #ff0084, #33001b);
   /* text colors */
   --text-white: #f3f4f6;
-  --text-button: #f3f4f6;
   --text-nav-hover: #e2c05a;
   --text-grey: #272727;
   --text-violet: rgb(11, 102, 11);
+  --text-black: #000000;
   /* box-shadow */
   --box-shadow-img: 5px 5px 12px 10px black;
   --box-shadow-card: 5px 5px 8px 12px black;
@@ -58,6 +60,15 @@ font-family: 'Rubik', sans-serif; */
     2px 2px 10px var(--text-decoration-h2);
   --text-shadow-p-section: 5px 1px 10px var(--text-decoration-p),
     2px 2px 10px var(--text-decoration-p);
+  --text-shadow-p-about: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+    0 0 0.2em rgb(75, 143, 245), 0 0 0.2em rgb(15, 90, 189),
+    0 0 0.2em rgb(0, 0, 0);
+  --text-shadow-p-card: 5px 1px 10px var(--text-decoration-p);
+  --text-shadow-h3-card: 10px 5px 10px var(--text-decoration-h2),
+    2px 2px 10px var(--text-decoration-h2);
+  --text-shadow-price-card: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+    0 0 0.2em rgb(75, 143, 245), 0 0 0.2em rgb(15, 90, 189),
+    0 0 0.2em rgb(0, 0, 0);
   /* border-color */
   --border-color-img-card: solid 2px beige;
   /* decoration */
@@ -171,6 +182,7 @@ main {
   justify-content: space-around;
   margin: 100px auto;
   width: 100%;
+  height: 100%;
 }
 .hero-info {
   width: 33rem;
@@ -211,7 +223,7 @@ main {
   width: max-content;
   height: max-content;
   padding: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 50px;
   transition: all 0.5s ease-out;
   font-family: "Helvetica", sans-serif;
@@ -220,7 +232,7 @@ main {
 .account,
 .login {
   background-color: var(--bg-button);
-  color: var(--text-button);
+  color: var(--text-white);
   border-color: var(--text-grey);
 }
 .account:hover,
@@ -301,6 +313,8 @@ main {
   align-items: flex-start;
   margin: 10px 0 100px 0;
   padding-top: 150px;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 .cards-container {
   width: 100%;
@@ -308,7 +322,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 3rem;
   margin: auto auto;
 }
 .cards {
@@ -316,6 +330,7 @@ main {
   flex-wrap: wrap;
   justify-content: last baseline;
   width: 20%;
+  width: min-content;
   height: max-content;
   border-radius: 52px;
   background: var(--background-img-card);
@@ -331,28 +346,64 @@ main {
 }
 .card-info {
   color: var(--text-white);
-  border: #cccaca solid 4px;
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
-  gap: 20px;
-  font-size: 0.9rem;
+  /* gap: 1rem; */
+  font-size: var(--font-size-p-card);
+  font-style: italic;
+  height: 22rem;
 }
 .card-info h3 {
   font-size: var(--font-size-h3-card);
-}
-.card-info span {
-  color: black;
-  font-weight: 700;
-  font-size: 1rem;
-}
-.card-price {
+  text-shadow: var(--text-shadow-h3-card);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  /* gap: 120px; */
+}
+.card-info span {
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: var(--font-size-span-card);
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-info p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  text-shadow: var(--text-shadow-p-card);
+}
+.card-info div {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 12px; */
+  margin-top: 0.5rem;
+}
+.card-info button {
+  font-style: oblique;
+  font-size: 1rem;
+  text-align: center;
+}
+.bx,
+.bx-cart-alt {
+  font-size: 1.4rem;
+  font-weight: 900px;
+}
+.card-info div .card-price {
+  color: var(--text-white);
+  text-shadow: var(--text-shadow-price-card);
+  font-size: 1.2rem;
+  cursor: none;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 /** ----- main - seccion servicios - final ------ */
