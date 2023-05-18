@@ -99,6 +99,7 @@ font-family: 'Rubik', sans-serif; */
 header {
   width: 99%;
   min-width: 70%;
+  height: 6.25rem;
   display: flex;
   /* flex-wrap: wrap; */
   align-items: center;
@@ -143,7 +144,6 @@ header:hover {
 .navbar-list li:nth-child(1) {
   font-weight: 900;
 }
-
 .cart-icon {
   color: var(--cart-icon);
   margin-right: 10px;
@@ -180,7 +180,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 100px auto;
+  margin: 70px auto;
   width: 100%;
   height: 100%;
 }
@@ -270,7 +270,7 @@ main {
   opacity: 0.8;
   width: 90%;
   box-shadow: var(--box-shadow-img);
-  margin: 140px auto 50px auto;
+  margin: 120px auto 0px auto;
   transition: all 0.5s ease-in;
   border: var(--border-color-img-card);
 }
@@ -297,24 +297,28 @@ main {
 /** ----- main - seccion servicios - inicio ------ */
 .services {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 200px auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .services h2 {
+  width: 100%;
+  background: linear-gradient(-280deg, #c7209d, #db23b6, #d314ad, #854a79);
+  border-bottom-style: solid;
+  padding: 1.7rem;
+  border-radius: 2rem;
   font-size: var(--font-size-h2);
   color: var(--text-white);
-  text-shadow: var(--text-shadow-h2);
+  text-shadow: var(--text-shadow-h3-card);
   font-style: italic;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
-  margin: 10px 0 100px 0;
-  padding-top: 150px;
-  text-decoration: underline;
-  text-underline-position: under;
+  align-items: center;
+  margin: 140px 0 80px 0;
+  /* text-decoration: underline; */
+  /* text-underline-position: under; */
 }
 .cards-container {
   width: 100%;
@@ -405,14 +409,26 @@ main {
   text-decoration: underline;
   text-underline-position: under;
 }
-
 /** ----- main - seccion servicios - final ------ */
 
 /** ----- main - seccion moreInfo - inicio ------ */
 .moreInfo {
-  width: 90%;
+  /* background: linear-gradient(
+    -380deg,
+    #854a79,
+    #dc143c,
+    #dc5d14,
+    #df0f38,
+    #dc5d14,
+    #dc143c,
+    #dc5d14,
+    #dc143c,
+    #d33bb5
+  ); */
+  /* border-radius: 2rem; */
+  width: 100%;
   height: max-content;
-  margin: 100px auto;
+  margin: 0 auto 200px auto;
   padding: 100px 0;
   display: flex;
   flex-direction: row;
@@ -429,7 +445,7 @@ main {
   background-size: cover;
   background-position: bottom;
   box-shadow: var(--box-shadow-img);
-  width: 450px;
+  width: 28rem;
   min-width: 30%;
   height: 400px;
   border-radius: 30px;
@@ -442,10 +458,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   width: 50%;
   font-weight: 550;
-  line-height: 36px;
+  line-height: 2.2rem;
   color: var(--text-white);
   margin: 0 auto;
 }
