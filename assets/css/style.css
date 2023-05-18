@@ -252,12 +252,12 @@ main {
   margin-left: 25px;
   border: var(--border-color-img-card);
 }
-@media (max-width: 280px) {
+@media (max-width: 360px) {
   .hero {
     flex-wrap: wrap;
   }
   .hero-button {
-    margin: 0 auto;
+    margin: 2.5rem auto;
   }
 }
 /** ----- main - seccion hero - final ------ */
@@ -504,7 +504,7 @@ main {
   font-style: italic;
   text-shadow: var(--text-shadow-p-section);
 }
-@media (max-width: 280px) {
+@media (max-width: 360px) {
   .moreInfo {
     flex-wrap: wrap;
   }
