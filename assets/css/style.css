@@ -252,14 +252,6 @@ main {
   margin-left: 25px;
   border: var(--border-color-img-card);
 }
-@media (max-width: 720px) {
-  .hero {
-    flex-wrap: wrap;
-  }
-  .hero-button {
-    margin: 2.5rem auto;
-  }
-}
 /** ----- main - seccion hero - final ------ */
 
 /** ----- main - seccion about - inicio ----- */
@@ -504,15 +496,6 @@ main {
   font-style: italic;
   text-shadow: var(--text-shadow-p-section);
 }
-@media (max-width: 720px) {
-  .moreInfo {
-    flex-wrap: wrap;
-  }
-  .moreInfo-data {
-    flex-direction: column;
-    width: 90%;
-  }
-}
 
 /** ----- main - seccion moreInfo - final ------ */
 
@@ -523,3 +506,19 @@ main {
   transform-style: preserve-3d;
   transition: all 2s ease-in;
 } */
+
+@media (max-width: 320px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero-button {
+    margin: 2.5rem auto;
+  }
+  .moreInfo {
+    flex-wrap: wrap;
+  }
+  .moreInfo-data {
+    flex-direction: column;
+    width: 90%;
+  }
+}
