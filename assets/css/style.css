@@ -252,7 +252,7 @@ main {
   margin-left: 25px;
   border: var(--border-color-img-card);
 }
-@media (max-width: 360px) {
+@media (max-width: 720px) {
   .hero {
     flex-wrap: wrap;
   }
@@ -504,7 +504,7 @@ main {
   font-style: italic;
   text-shadow: var(--text-shadow-p-section);
 }
-@media (max-width: 360px) {
+@media (max-width: 720px) {
   .moreInfo {
     flex-wrap: wrap;
   }
