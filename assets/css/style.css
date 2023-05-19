@@ -427,21 +427,6 @@ main {
 
 /** ----- main - seccion moreInfo - inicio ------ */
 .moreInfo {
-  /* background: linear-gradient(
-    -380deg,
-    #854a79,
-    #dc143c,
-    #dc5d14,
-    #df0f38,
-    #dc5d14,
-    #dc143c,
-    #dc5d14,
-    #dc143c,
-    #d33bb5
-  ); */
-  background-image: var(--background-img-card);
-  border-radius: 2rem;
-  border: #209cd8;
   width: 100%;
   height: 100%;
   margin: 0 auto 200px auto;
@@ -496,8 +481,69 @@ main {
   font-style: italic;
   text-shadow: var(--text-shadow-p-section);
 }
-
 /** ----- main - seccion moreInfo - final ------ */
+
+/** ----- main - seccion contact - inicio ------ */
+.contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-white);
+  gap: 2rem;
+}
+.contact-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-title span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: cyan;
+}
+.contact-title h2 {
+  font-size: var(--font-size-h2);
+  text-shadow: var(--text-shadow-h2);
+}
+.contact iframe {
+  width: 50%;
+  min-width: 20%;
+  height: 20rem;
+  min-height: 10rem;
+  border-radius: 2rem;
+  /* border-color: #33a4dd; */
+  box-shadow: #041720 1px 1px 1px 5px;
+  border-style: double;
+}
+.contact-info {
+  width: max-content;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: self-start;
+  justify-content: center;
+  gap: 60px;
+}
+.contact-info p {
+  /* line-height: 3rem; */
+  width: 100%;
+  padding: 1rem 1rem;
+  border-bottom: 4px solid white;
+  font-size: 1.2rem;
+}
+.bx-map,
+.bxl-whatsapp {
+  font-size: 1.5rem;
+}
+/** ----- main - seccion contact - final ------ */
+
+/*! ---- //// MAIN INICIO ---- //// */
 
 /* *PARA CARD "clase de card":hover {
   -webkit-transform: rotateY(180deg);
@@ -516,9 +562,18 @@ main {
   }
   .moreInfo {
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .moreInfo-img {
+    width: 20rem;
+    height: 20rem;
   }
   .moreInfo-data {
     flex-direction: column;
     width: 90%;
   }
+}
+
+.fa-location-dot {
+  font-size: 33px;
 }
