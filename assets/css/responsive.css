@@ -1,0 +1,89 @@
+@media (min-width: 1900px) {
+  .navbar-list li a {
+    font-size: 2rem;
+  }
+  .hero-info {
+    width: 55%;
+  }
+  .hero-info h2 {
+    font-size: 4rem;
+  }
+  .hero-info p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: start;
+  }
+  .hero-button button {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .hero-img {
+    width: 40%;
+
+    margin: 0 auto;
+  }
+  .about {
+    height: 45rem;
+  }
+  .about .about-info {
+    font-size: 2rem;
+  }
+  #serv h2 {
+    font-size: 4rem;
+  }
+  #serv .cards {
+    width: 33%;
+  }
+  #serv .cards img {
+    width: 60%;
+    height: 22rem;
+  }
+  #serv .card-info {
+    height: 35rem;
+  }
+  #serv .card-info h3 {
+    font-size: 2rem;
+  }
+  #serv .card-info span {
+    font-size: 1.7rem;
+  }
+  #serv .card-info p {
+    font-size: 1.5rem;
+  }
+  #serv .card-info button,
+  #serv .card-info .card-price {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .moreInfo-img {
+    width: 55%;
+    min-width: 25rem;
+    height: 28rem;
+  }
+  .moreInfo-data {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1153px) {
+  .hero-info {
+    align-items: center;
+  }
+  .hero-button {
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .moreInfo-img {
+    width: 55%;
+    height: 28rem;
+  }
+  .moreInfo-data {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
