@@ -171,7 +171,7 @@ main {
   background-image: var(--background-img-main);
   width: 100%;
   padding: 110px 100px;
-  min-width: fit-content;
+  min-width: min-content;
   max-width: max-content;
 }
 
