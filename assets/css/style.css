@@ -85,6 +85,7 @@ font-family: 'Rubik', sans-serif; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   list-style-type: none;
   text-decoration: none;
   /* font-family: "Open Sans", sans-serif; */
@@ -251,63 +252,6 @@ main {
   border-radius: 30px;
   margin-left: 25px;
   border: var(--border-color-img-card);
-}
-@media (min-width: 1400px) {
-  .navbar-list li a {
-    font-size: 2rem;
-  }
-  .hero-info {
-    width: 55%;
-  }
-  .hero-info h2 {
-    font-size: 4rem;
-  }
-  .hero-info p {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    text-align: start;
-  }
-  .hero-button button {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-  .hero-img {
-    width: 40%;
-    /* height: 25rem; */
-    margin: 0 auto;
-  }
-  .about {
-    height: 45rem;
-  }
-  .about .about-info {
-    font-size: 2rem;
-  }
-  #serv h2 {
-    font-size: 4rem;
-  }
-  #serv .cards {
-    width: 33%;
-  }
-  #serv .cards img {
-    width: 60%;
-    height: 22rem;
-  }
-  #serv .card-info {
-    height: 35rem;
-  }
-  #serv .card-info h3 {
-    font-size: 2rem;
-  }
-  #serv .card-info span {
-    font-size: 1.7rem;
-  }
-  #serv .card-info p {
-    font-size: 1.5rem;
-  }
-  #serv .card-info button,
-  #serv .card-info .card-price {
-    font-size: 2rem;
-  }
 }
 
 /** ----- main - seccion hero - final ------ */
@@ -613,6 +557,64 @@ main {
   transform-style: preserve-3d;
   transition: all 2s ease-in;
 } */
+
+@media (min-width: 1400px) {
+  .navbar-list li a {
+    font-size: 2rem;
+  }
+  .hero-info {
+    width: 55%;
+  }
+  .hero-info h2 {
+    font-size: 4rem;
+  }
+  .hero-info p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: start;
+  }
+  .hero-button button {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .hero-img {
+    width: 40%;
+    /* height: 25rem; */
+    margin: 0 auto;
+  }
+  .about {
+    height: 45rem;
+  }
+  .about .about-info {
+    font-size: 2rem;
+  }
+  #serv h2 {
+    font-size: 4rem;
+  }
+  #serv .cards {
+    width: 33%;
+  }
+  #serv .cards img {
+    width: 60%;
+    height: 22rem;
+  }
+  #serv .card-info {
+    height: 35rem;
+  }
+  #serv .card-info h3 {
+    font-size: 2rem;
+  }
+  #serv .card-info span {
+    font-size: 1.7rem;
+  }
+  #serv .card-info p {
+    font-size: 1.5rem;
+  }
+  #serv .card-info button,
+  #serv .card-info .card-price {
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 1200px) {
   .moreInfo-img {
