@@ -526,7 +526,8 @@ main {
   justify-content: space-around;
 }
 .contact-data-info {
-  width: 40%;
+  width: 50%;
+  min-width: 25%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -534,7 +535,7 @@ main {
   align-items: center;
   gap: 1.5rem;
   padding: 0.5rem 1rem;
-  border-right: solid 1px;
+  /* border-right: solid 1px; */
 }
 .contact-data-info h4 {
   font-size: var(--font-size-h3-card);
@@ -559,7 +560,7 @@ main {
   box-shadow: #041720 1px 1px 1px 5px;
   border-style: double;
 }
-.contact-networks {
+/* .contact-networks {
   width: 20%;
   height: 16rem;
   margin: 0 1rem;
@@ -580,9 +581,9 @@ main {
   flex-wrap: nowrap;
   gap: 1rem;
   align-items: flex-start;
-}
+} */
 .contact-form {
-  width: 27%;
+  width: 45%;
   margin-top: 0.5rem;
   /* height: 42rem; */
   display: flex;
