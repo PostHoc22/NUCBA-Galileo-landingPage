@@ -209,7 +209,7 @@ main {
   font-size: var(--font-size-p-section);
   line-height: 2rem;
   color: var(--text-white);
-  text-shadow: var(--text-shadow-p-section);
+  /* text-shadow: var(--text-shadow-p-section); */
 }
 .hero-button {
   display: flex;
@@ -451,7 +451,7 @@ main {
   box-shadow: var(--box-shadow-img);
   width: 33%;
   min-width: 18rem;
-  height: 22rem;
+  height: 32rem;
   /* min-height: 15rem; */
   border-radius: 30px;
   border: var(--border-color-img-card);
@@ -485,7 +485,7 @@ main {
   color: var(--text-white);
   font-size: var(--font-size-p-section);
   font-style: italic;
-  text-shadow: var(--text-shadow-p-section);
+  /* text-shadow: var(--text-shadow-p-section); */
 }
 /** ----- main - seccion moreInfo - final ------ */
 
