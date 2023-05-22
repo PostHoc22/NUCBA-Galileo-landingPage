@@ -186,7 +186,7 @@ main {
   height: 100%;
 }
 .hero-info {
-  width: 33rem;
+  width: 50%;
   height: max-content;
   display: flex;
   flex-direction: column;

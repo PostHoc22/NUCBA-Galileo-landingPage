@@ -77,6 +77,11 @@
   }
 }
 
+@media (max-width: 947px) {
+  .hero-info {
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
   .moreInfo-img {
     width: 55%;
