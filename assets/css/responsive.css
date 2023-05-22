@@ -65,6 +65,7 @@
   .moreInfo-data {
     width: 100%;
     margin: 0 auto;
+    padding: 0 2rem;
   }
 }
 
@@ -74,6 +75,9 @@
   }
   .hero-button {
     margin: 2rem auto;
+  }
+  .moreInfo-data {
+    padding: 0 2rem;
   }
 }
 
