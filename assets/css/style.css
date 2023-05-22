@@ -19,7 +19,7 @@ font-family: 'Rubik', sans-serif; */
 :root {
   /* font-size */
   --font-size-navbar: 1.1rem;
-  --font-size-p-section: 1rem;
+  --font-size-p-section: 1.3rem;
   --font-size-h2: 2.5rem;
   --font-size-h3-card: 1.2rem;
   --font-size-span-card: 1rem;
@@ -180,7 +180,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 70px auto;
   width: 100%;
   height: 100%;
