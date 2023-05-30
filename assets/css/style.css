@@ -78,6 +78,10 @@ font-family: 'Rubik', sans-serif; */
   --text-decoration-p: #209cd8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ------- ACA EMPIEZA EL CODIGO DEL BODY ---------------- */
 
 /**-----//// selector universal ////-----*/
@@ -85,8 +89,6 @@ font-family: 'Rubik', sans-serif; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  /* scroll-behavior: smooth; */
   list-style-type: none;
   text-decoration: none;
   /* font-family: "Open Sans", sans-serif; */
@@ -204,12 +206,12 @@ main {
 }
 .hero-info p {
   text-align: justify;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 550;
   font-size: var(--font-size-p-section);
   line-height: 2rem;
   color: var(--text-white);
-  /* text-shadow: var(--text-shadow-p-section); */
+  /* text-shadow: var(--text-shadow-price-card); */
 }
 .hero-button {
   display: flex;
@@ -223,7 +225,7 @@ main {
   font-weight: 600;
   width: max-content;
   height: max-content;
-  padding: 14px;
+  padding: 12px;
   margin-bottom: 10px;
   border-radius: 50px;
   transition: all 0.5s ease-out;
@@ -300,6 +302,7 @@ main {
 /** ----- main - seccion servicios - inicio ------ */
 .services {
   width: 100%;
+  min-width: 773px;
   margin: 0 auto 200px auto;
   display: flex;
   flex-direction: column;
@@ -351,13 +354,14 @@ main {
   background: var(--background-img-card);
   box-shadow: var(--box-shadow-card);
   border: var(--border-color-img-card);
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out;
 }
 .cards:hover {
-  filter: saturate(150%);
   cursor: pointer;
   /* padding: 4px; */
-  transition: all 0.2s ease-out;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 1px 20px 2px white;
 }
 .cards img {
   width: 12rem;
@@ -381,7 +385,7 @@ main {
 }
 .card-info h3 {
   font-size: var(--font-size-h3-card);
-  text-shadow: var(--text-shadow-h3-card);
+  /* text-shadow: var(--text-shadow-h3-card); */
   display: flex;
   flex-wrap: wrap;
 }
@@ -410,9 +414,12 @@ main {
   margin-top: 0.5rem;
 }
 .card-info button {
-  font-style: oblique;
+  /* font-style: oblique; */
   font-size: 1rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .bx,
 .bx-cart-alt {
@@ -484,7 +491,7 @@ main {
 .moreInfo-data p {
   color: var(--text-white);
   font-size: var(--font-size-p-section);
-  font-style: italic;
+  /* font-style: italic; */
   /* text-shadow: var(--text-shadow-p-section); */
 }
 /** ----- main - seccion moreInfo - final ------ */
@@ -648,28 +655,33 @@ iframe {
   padding: 1rem;
   border: black;
 }
-.form-group input:focus {
-  outline: none; /*para quitar borde al input*/
-  background-color: cyan;
-}
 .form-group input::placeholder /*para dar color de fondo al input cuando se le da clic con el mouse*/ {
   font-style: italic;
-  color: gray;
+  color: rgb(97, 93, 93);
   font-weight: 500;
+  outline: none; /*para quitar borde al input*/
 }
-#name:invalid {
+#name,
+#email,
+#phone {
+  font-style: italic;
+  color: black;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+#name:focus,
+#email:focus,
+#phone:focus {
+  outline: none; /*para quitar borde al input*/
+  background-color: cyan;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+#name:invalid, #email:invalid, #phone:invalid /*arrroja color rojo si el dato cargado es erroneo*/ {
   color: red;
   font-weight: 600;
 }
-#name:valid {
-  color: blue;
-  font-weight: 600;
-}
-#email:invalid {
-  color: red;
-  font-weight: 600;
-}
-#email:valid {
+#name:valid, #email:valid, #phone:valid /*arroja color azul si el dato cargado es correcto*/ {
   color: blue;
   font-weight: 600;
 }
@@ -679,10 +691,11 @@ iframe {
   padding: 1rem;
   font-size: 1rem;
   font-family: var(--font-size-span-card);
-  color: crimson;
+  color: black;
 }
 #message:focus {
   background-color: cyan;
+  outline: none;
 }
 .form-group-btn {
   width: 100%;
@@ -705,11 +718,11 @@ iframe {
   flex-direction: column;
   justify-content: space-around;
 }
-.submit:hover,
-.reset:hover,
-.reset:focus {
-  background-color: grey;
-  outline: none;
+.submit:active,
+.reset:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
 }
 
 /** ----- main - seccion contact - final ------ */
@@ -729,7 +742,7 @@ footer {
   height: max-content;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0.5rem;
+  padding: 2rem 0.5rem;
   font-size: 1.2rem;
   background-image: linear-gradient(
     to right top,
@@ -741,11 +754,17 @@ footer {
   );
   border-top-left-radius: 40px;
   border-top-right-radius: 50px;
+  border-top: white solid 1px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+footer:hover {
+  box-shadow: 1px 1px 20px 1px whitesmoke;
+  transition: box-shadow 0.2s ease-in-out;
 }
 footer h5 {
   color: cyan;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 footer p {
   color: whitesmoke;
@@ -764,12 +783,12 @@ footer p {
   gap: 1rem;
 }
 .payment-methods > i {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   display: flex;
 }
 .payment-methods span {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-left: 0.5rem;
 }
 .giftcard {
@@ -781,13 +800,14 @@ footer p {
   gap: 1rem;
 }
 .giftcard .bx {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .giftcard-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: max-content;
+  font-size: 1rem;
 }
 .safe-site {
   width: 30%;
@@ -798,7 +818,7 @@ footer p {
   gap: 1rem;
 }
 .safe-site .bx {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .safe-site-info {
   display: flex;
@@ -808,6 +828,7 @@ footer p {
 }
 .safe-site-info p {
   text-align: center;
+  font-size: 1rem;
 }
 .social-networks {
   width: 100%;
@@ -817,17 +838,19 @@ footer p {
   align-items: center;
   gap: 1rem;
 }
-.social-networks-icons > i {
+.social-networks-icons a i {
   width: max-content;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
   padding: 0.5rem;
   border: white solid;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-in-out;
 }
 .social-networks-icons i:hover {
   box-shadow: var(--text-nav-hover) 0px 0px 25px 0px;
   color: var(--text-nav-hover);
+  transition: all 0.2s ease-in-out;
 }
 .footer-icon {
   width: 100%;
@@ -838,8 +861,18 @@ footer p {
   padding-top: 0.5rem;
 }
 .footer-icon img {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+.it {
+  font-size: 1rem;
 }
 
 /* .social-networks {

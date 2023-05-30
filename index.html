@@ -214,7 +214,7 @@
                                 <label for="name">Nombre:</label>
                                 <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" maxlength="20"
                                     required="" pattern="[a-z ]{1,20}"
-                                    title="Ingresar solo texto (NO Numeros) / (Referencias: color azul = dato correcto - color rojo = dato incorrecto)">
+                                    title="Ingresar solo texto en minuscula (NO Numeros) / (Referencias: color azul = dato correcto - color rojo = dato incorrecto)">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
@@ -226,7 +226,9 @@
                             <div class="form-group">
                                 <label for="phone">Telefono <span>(opcional):</span></label>
                                 <input type="tel" name="phone" id="phone" placeholder="(Código de área) + Número"
-                                    maxlength="14">
+                                    pattern="[(]{1}[0-9]{3}[)]{1}[-]{1}[0-9]{1,10}"
+                                    title="El número de teléfono para ser válido debe constar de un código de área de 3 dígitos entre paréntesis, un guión, y los dígitos restantes del número (sin el 15, en el caso de ser telefono celular). Referencias: color azul = dato correcto - color rojo = dato incorrecto"
+                                    maxlength="15">
                             </div>
                         </div>
                         <div class="contact-form-data-input">
@@ -236,8 +238,8 @@
                             </div>
                             <div class="form-group">
                                 <div class="form-group-btn">
-                                    <input class="submit" type="submit" value="Enviar">
-                                    <input class="reset" type="reset" value="Limpiar">
+                                    <input class="submit account" type="submit" value="Enviar">
+                                    <input class="reset account" type="reset" value="Limpiar">
                                 </div>
                             </div>
                         </div>
@@ -272,9 +274,15 @@
             <div class="social-networks">
                 <h5>SEGUINOS EN NUESTRAS REDES SOCIALES:</h5>
                 <div class="social-networks-icons">
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-tiktok'></i>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class='bx bxl-instagram'> </i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://www.tiktok.com/foryou" target="_blank">
+                        <i class='bx bxl-tiktok'></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-icon">

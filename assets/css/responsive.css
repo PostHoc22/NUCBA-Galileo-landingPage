@@ -81,6 +81,15 @@
   }
 }
 
+@media (max-width: 970px) {
+  .giftcard {
+    flex-direction: column-reverse;
+  }
+  .safe-site {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 947px) {
   .hero-info {
     width: 90%;
@@ -95,5 +104,8 @@
   .moreInfo-data {
     width: 100%;
     margin: 0 auto;
+  }
+  .form-group textarea {
+    width: 90%;
   }
 }
